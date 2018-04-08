@@ -1,3 +1,40 @@
+# Copyright 2018 Mehraveh Salehi
+# This code is released under the terms of the GNU GPL v2. This code
+# is not FDA approved for clinical use; it is provided
+# freely for research purposes. If using this in a publication
+# please reference this properly as: 
+
+% This code provides a framework for implementing functional
+% connectivity-based behavioral prediction in a leave-one-subject-out
+					  % cross-validation scheme, as described in Finn, Shen et al 2015 (see above
+													    % for full reference). The first input ('all_mats') is a pre-calculated
+					  % MxMxN matrix containing all individual-subject connectivity matrices,
+% where M = number of nodes in the chosen brain atlas and N = number of
+					  % subjects. Each element (i,j,k) in these matrices represents the
+% correlation between the BOLD timecourses of nodes i and j in subject k
+  % during a single fMRI session. The second input ('all_behav') is the
+% Nx1 vector of scores for the behavior of interest for all subjects.
+
+					  % As in the reference paper, the predictive power of the model is assessed
+% via correlation between predicted and observed scores across all
+% subjects. Note that this assumes normal or near-normal distributions for
+					  % both vectors, and does not assess absolute accuracy of predictions (only
+														% relative accuracy within the sample). It is recommended to explore
+					  % additional/alternative metrics for assessing predictive power, such as
+% prediction error sum of squares or prediction r^2.
+
+
+% ------------ INPUTS -------------------
+
+
+
+% rest_1_mats = M_xilin;
+
+rest_1_mats = X;
+PMAT_CR = pmat;
+
+
+
 rm(list = ls())
 library(igraph)
 library(networkD3)
@@ -10,8 +47,7 @@ library(R.matlab)
 # c is the number of conditions (e.g. 3 in the movie data set, representing inscapes, ocean, and rest), and
 # p is the number of nodes or parcels (e.g. 181 in the movie data set)
 # We read matrix M (the variable's name in MATLAB) here:
-# M <- readMat('PATH_TO_CONNECTIVITY_MATRIX.mat')$M
-M <- readMat('/Users/Mehraveh/Documents/MATLAB/OtherCollaborations/Tamara/M_n31.mat')$M
+M <- readMat('PATH_TO_CONNECTIVITY_MATRIX.mat')$M
 M_size <- dim(M)
 
 # the condition number to visualize (e.g. 1 or 2 or 3 in the movie data set)
