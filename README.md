@@ -13,7 +13,7 @@ please reference this properly via the following bibtex:
   publisher = {GitHub},<br/>
   journal = {GitHub repository},<br/>
   doi = {10.5281/zenodo.1214901},<br/>
-  hrl = {\url{https://github.com/mehravehs/NetworkVisualization}},<br/>
+  hrl = https://github.com/mehravehs/NetworkVisualization,<br/>
 }
 
 This code provides a framework for the network visualization of functional connectivity matrices.
