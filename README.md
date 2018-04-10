@@ -13,4 +13,4 @@ This code provides a framework for the network visualization of functional conne
 ### Outputs
 The functional connecitivity matrix is visualized as a network in the browser.
 ### License
-Copyright &copy; 2018, Mehraveh Salehi. This code is released under the terms of the GNU GPL v2. 
+Copyright&copy;2018, Mehraveh Salehi. This code is released under the terms of the GNU GPL v2. 
