@@ -36,7 +36,7 @@ library(R.matlab)
 # M has size n x c x p x p, where:
 # n is the number of scnas for each condition (e.g. 2 in the movie data set),
 # c is the number of conditions (e.g. 3 in the movie data set, representing inscapes, ocean, and rest), and
-# p is the number of nodes or parcels (e.g. 181 in the movie data set)
+# p is the number of nodes or parcels (e.g. 181 in the movie data set, or 268 in Shen atlas)
 # We read matrix M (the variable's name in MATLAB) here:
 M <- readMat('PATH_TO_CONNECTIVITY_MATRIX.mat')$M
 M_size <- dim(M)
