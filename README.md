@@ -5,14 +5,15 @@ This code is released under the terms of the GNU GPL v2. This code
 is not FDA approved for clinical use; it is provided
 freely for research purposes. If using this in a publication
 please reference this properly via the following bibtex:
-@misc{Salehi2018,
-  author = {Salehi, Mehraveh},__
-  title = {Network Visualization},__
-  year = {2018},__
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  doi = {10.5281/zenodo.1214901}
-  hrl = {\url{https://github.com/mehravehs/NetworkVisualization}},
+<br/>
+@misc{Salehi2018,<br/>
+  author = {Salehi, Mehraveh},<br/>
+  title = {Network Visualization},<br/>
+  year = {2018},_<br/>
+  publisher = {GitHub},<br/>
+  journal = {GitHub repository},<br/>
+  doi = {10.5281/zenodo.1214901}<br/>
+  hrl = {\url{https://github.com/mehravehs/NetworkVisualization}},<br/>
 }
 
 This code provides a framework for the network visualization of functional connectivity matrices
