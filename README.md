@@ -12,5 +12,10 @@ This code provides a framework for the network visualization of functional conne
 
 ### Outputs
 The functional connecitivity matrix is visualized as a network in the browser.
+
+<center>
+<img src="/images/network.png" width="350" />
+</center>
+
 ### License
 Copyright &copy; 2018, Mehraveh Salehi. This code is released under the terms of the GNU GPL v2. 
